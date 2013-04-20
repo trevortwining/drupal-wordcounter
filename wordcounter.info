@@ -1,0 +1,5 @@
+name = Real Word Counter
+description = Counts the words in drupal node body fields.
+core = 7.x
+
+files[] = js/jquery.wordcount.js
