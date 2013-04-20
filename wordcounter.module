@@ -5,8 +5,6 @@
  */
 
 function wordcounter_form_node_form_alter(&$form, $form_state) {
-  //dsm($form);
-  dsm(drupal_get_path('module', 'wordcounter') . '/js/jquery.wordcount.js');
   drupal_add_js(drupal_get_path('module', 'wordcounter') . '/js/jquery.wordcount.js', 'file');
   $form['body'][LANGUAGE_NONE][0]['#prefix'] = '<div class="wordcount">' . t('# of words:') . ' <span id="wordcount">0</span></div><div id="body-add-more-wrapper">';
   
